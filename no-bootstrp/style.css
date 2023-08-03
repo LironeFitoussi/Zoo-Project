@@ -12,7 +12,7 @@ body {
     width: 90vw;
     display: grid;
     grid-template-columns: 15% 40% 45%;
-    grid-template-rows: 10% 80% 10%;
+    grid-template-rows: 10% fit-content 10%;
     grid-template-areas: 
         "header header header"
         "sidebar main main"
@@ -91,6 +91,39 @@ a.active {
     color: #fff;
 }
 
+/* Main  */
+
+main {
+    display: flex;
+    justify-content: center;
+    height: fit-content;
+    padding: 5%;
+}
+
+.animals-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.animal-card {
+    height: fit-content;
+    max-height: 40vh;
+    border-radius: 10px;
+    background-color: #fff;
+    width: 100%;
+}
+
+.animal-card > img {
+    width: 100%;
+    border-radius: 10px 10px 0 0 ;
+}
+
+.animal-card > h2, p {
+    padding: 0 5%;
+}
+
 @media screen and (max-width: 600px) {
     body {
         grid-template-areas: 
@@ -104,3 +137,4 @@ a.active {
         display: none;
     }
 }
+
