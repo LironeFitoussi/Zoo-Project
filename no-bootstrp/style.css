@@ -1,0 +1,10 @@
+body {
+    display: grid;
+    grid-template-columns: 10% 45% 45%;
+    grid-template-rows: 5% 90% 5%;
+    grid-template-areas: 
+        "header header header"
+        ".sidebar main main"
+        "footer footer footer"
+    ;
+}
