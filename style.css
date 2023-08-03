@@ -25,9 +25,13 @@ header {
     grid-area: main;
     padding: 5%;
 }
-.footer {
-    background-color: rgb(0, 0, 255);
+footer {
     grid-area: footer;
+}
+
+.nav {
+    width: 100%;
+    justify-content: space-between;
 }
 
 .bg-body-tertiary {
@@ -41,10 +45,20 @@ header {
     width: 100%;
 }
 
+ul.flex-column {
+    display: flex;
+    flex-direction: column-reverse!important;
+}
+
+.row {
+    justify-content: center;
+}
+
 @media screen and (max-width: 600px) {
-    /* .sidebar {
+    .sidebar {
         display: none;
     }
+    /*
     .header, .sidebar, .main, .footer {
         grid-area: initial;
     } */
